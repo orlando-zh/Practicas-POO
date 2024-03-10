@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banco Amaya</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        rel="stylesheet"
+    />
+</head>
+
+<body class="bg-gray-100 p-6">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold mb-4">¡Bienvenido a Banco A.!</h2>
+        <div>
+            <label for="nombre" class="block mb-2">Nombre:</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4"
+            />
+        </div>
+        <div>
+            <label for="numeroCuenta" class="block mb-2">Numero cuenta:</label>
+            <input
+                type="text"
+                id="numeroCuenta"
+                name="numeroCuenta"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4"
+            />
+        </div>
+        <div>
+            <label for="cantidad" class="block mb-2">Cantidad:</label>
+            <input
+                type="number"
+                id="cantidad"
+                name="cantidad"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4"
+            />
+        </div>
+
+        <div>
+            <label class="block mb-2">¿Qué desea hacer?</label>
+            <div class="flex mb-4">
+                <button id='btnRetiro' class="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mr-2">Retiro</button>
+                <button id= "btnAbono"class="flex-1 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg">Abono</button>
+            </div>
+        </div>
+
+        <div>
+            <label id="respuesta" class="block mb-2"></label>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
